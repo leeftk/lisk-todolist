@@ -50,7 +50,7 @@ class HelloTransaction extends BaseTransaction {
                 )
             );
         } else {
-            const newObj = { ...sender, asset: { ipfs: this.asset.ipfs}  };
+            const newObj = { ...sender, asset: { hellp: this.asset.hellp}  };
             store.account.set(sender.address, newObj);
         }
         return errors; // array of TransactionErrors, returns empty array if no errors are thrown
